@@ -5,42 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Implementa tu página Web</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+    <style>
+        /* Agrega esta clase para la transición */
+        html {
+            scroll-behavior: smooth; /* Desplazamiento suave */
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
 
     <!-- Header -->
-    <header class="text-center bg-gradient-to-r from-blue-500 to-teal-400 text-white py-20 shadow-lg">
-        <h1 class="text-4xl font-bold mb-3">Mi negocio de creación de Páginas Web</h1>
+    <header class="text-center bg-gray-900 text-white py-20 shadow-lg">
+        <h1 class="text-4xl font-bold mb-3">Desarrollos Tech</h1>
         <p class="text-lg mb-6">Soluciones profesionales de diseño y desarrollo web</p>
-        <button class="bg-blue-700 hover:bg-blue-800 transition-colors text-white font-semibold py-3 px-8 rounded-full">
+        <a href="#contacto" id="contact-btn" class="bg-red-700 hover:bg-red-900 transition-colors text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             Contáctanos
-        </button>
+        </a>
     </header>
 
     <!-- Main Content -->
     <main class="max-w-5xl mx-auto mt-12 px-6">
         <!-- Services Section -->
         <section class="mb-16">
-            <h2 class="text-3xl font-semibold text-blue-600 text-center mb-10">Nuestros Servicios</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transform hover:-translate-y-1 transition-all">
+            <h2 class="text-3xl font-semibold text-black-600 text-center mb-10">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
                     <h3 class="text-xl font-semibold mb-4">Diseño Personalizado</h3>
                     <p>Desarrollamos diseños únicos para cada cliente.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transform hover:-translate-y-1 transition-all">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
                     <h3 class="text-xl font-semibold mb-4">Desarrollo Responsivo</h3>
                     <p>Optimización en todos los dispositivos.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transform hover:-translate-y-1 transition-all">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
                     <h3 class="text-xl font-semibold mb-4">SEO Optimizado</h3>
                     <p>Mejoramos el posicionamiento de tu página.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">Impulsa tus redes sociales</h3>
+                    <p>Creación de contenido y estrategias para tus redes sociales</p>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="mb-16 text-center">
+        <!-- Sección contáctanos -->
+        <section id="contacto" class="mb-16 text-center">
             <h2 class="text-3xl font-semibold text-blue-600 mb-6">Contacto</h2>
             <p>Escríbenos a: <a href="mailto:contactenos@gmail.com" class="text-blue-500 hover:underline">contactenos@gmail.com</a></p>
         </section>
@@ -48,8 +59,12 @@
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 py-6 text-center">
-        <p>&copy; 2024 Mi negocio de creación de Páginas Web - Todos los derechos reservados</p>
+        <p>&copy; 2024 Desarrollos Tech - Todos los derechos reservados</p>
     </footer>
 
+    <script>
+        // Este script no es necesario ya que usamos scroll-behavior en CSS.
+        // Pero si necesitas un control más avanzado, puedes agregar código aquí.
+    </script>
 </body>
 </html>
